@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grupo HOPE - Boas-vindas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Playfair+Display&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="edit-bar">
+    <button onclick="abrirEdicao()">✏️ Editar dados</button>
+    <button onclick="capturarQuadrado()">📸 Salvar quadro como imagem</button>
+  </div>
+
+  <div class="container">
+    <h1>BEM VINDO AO GRUPO HOPE</h1>
+
+    <div class="logos">
+      <div class="logo-text hope">HOPE</div>
+      <div class="logo-text resort">Hope Resort</div>
+      <div class="logo-text bonjour">Bonjour Lingerie</div>
+    </div>
+
+    <div class="user-info">
+      <h2 id="nomeCompleto">Nome do Colaborador</h2>
+      <p>Usuário de Rede: <span id="usuario">usuario.exemplo</span></p>
+      <p>E-mail: <span id="email">usuario.exemplo@grupohope.com.br</span></p>
+      <p>Teams: <span id="teams">usuario.exemplo@grupohope.com.br</span></p>
+      <p>Senha: <span id="senha">Senha123</span></p>
+    </div>
+
+    <div id="formularioEdicao">
+      <input type="text" id="novoNome" placeholder="Nome completo">
+      <input type="text" id="novoUsuario" placeholder="Nome de usuário">
+      <input type="text" id="novaSenha" placeholder="Senha">
+      <button onclick="salvarEdicao()">✅ Salvar</button>
+    </div>
+
+    <div class="avisos">
+      <p>Todas as senhas fornecidas deverão ser alteradas para sua segurança.</p>
+      <p>Solicitações de TI - Infraestrutura: <a href="https://infra.grupohope.com.br">infra.grupohope.com.br</a></p>
+      <p>TI - Sistemas: <a href="https://sistema.hope.com.br">sistema.hope.com.br</a></p>
+      <p>TI - Linx: <a href="https://franquia.hope.com.br">franquia.hope.com.br</a></p>
+    </div>
+  </div>
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
